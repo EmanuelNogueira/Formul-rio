@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Anton", sans-serif;
+  font-family: sans-serif;
 }
 
 body {
@@ -39,4 +39,66 @@ body {
   margin-bottom: 10px;
   padding-bottom: 20px;
   position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #c9c9c9;
+  display: block;
+  border-radius: 10px;
+  font-size: 15px;
+  width: 100%;
+  padding: 10px;
+}
+
+.form-control i {
+  position: absolute;
+  top: 35px;
+  right: 10px;
+  visibility: hidden; /*Hidden(invisível). Iremos manipular essa parte */
+}
+
+.form-control small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form button {
+  background-color: #ff5cc9;
+  border: 2px solid #ff5cc9;
+  color: #ffffff;
+  font-size: 15px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+/* Error and success */
+.form-control.success input {
+  border-color: #22e710;
+}
+
+.form-control.error input {
+  border-color: #f03a23;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #22e710;
+  visibility: visible;
+}
+
+.form-control.error i.fa-circle-exclamation {
+  color: #f03a23;
+  visibility: visible;
+}
+
+.form-control.error small {
+  color: #f03a23;
+  visibility: visible;
 }
