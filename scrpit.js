@@ -10,4 +10,22 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
 });
 
-function checkInput() {}
+function checkInputs() {
+  const usernameValue = username.value;
+  const emailValue = email.value;
+  const passwordValue = password.value;
+  const passwordConfirmationValue = passwordConfirmation.value;
+
+  if (usernameValue === "") {
+    setErrorfor(username, "O nome de usuário é obrigatório");
+  }
+}
+
+function setErrorfor(input, message) {}
+
+function functionsetSucessFor(input) {
+  const formControl = input.parentElement;
+
+  // Adicionar classe de sucesso
+  formControl.className;
+}
