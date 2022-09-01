@@ -77,6 +77,7 @@ body {
   width: 100%;
   border-radius: 10px;
   padding: 8px;
+  cursor: pointer;
 }
 
 /* Error and success */
