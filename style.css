@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  font-family: "Josefin Sans";
 }
 
 body {
@@ -10,10 +11,17 @@ body {
   width: 100%;
   /* Ocupar 100% da visão do usuário */
   min-height: 100vh;
-  background: linear-gradient(90deg, #69edff, #ff5cc9);
+  background: linear-gradient(90deg, #7a0085, #c35cd8);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.image-form img {
+  position: relative;
+  width: 25rem;
+  bottom: 20%;
+  left: -150px;
 }
 
 /* Minha box de elementos */
@@ -24,6 +32,7 @@ body {
   width: 400px;
   max-width: 100%;
   overflow: hidden;
+  left: 50px;
 }
 
 .header {
@@ -70,8 +79,8 @@ body {
 }
 
 .form button {
-  background-color: #ff5cc9;
-  border: 2px solid #ff5cc9;
+  background-color: #921cc9;
+  border: 2px solid #921cc9;
   color: #ffffff;
   font-size: 15px;
   width: 100%;
